@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322400072258923D00C23440 /* libcurses.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 322400062258923D00C23440 /* libcurses.tbd */; };
+		3224000A2258924E00C23440 /* libncurses.5.4.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 322400082258924E00C23440 /* libncurses.5.4.tbd */; };
+		3224000B2258924E00C23440 /* libncurses.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 322400092258924E00C23440 /* libncurses.5.tbd */; };
 		3224FFFF2258920800C23440 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3224FFFE2258920800C23440 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		322400062258923D00C23440 /* libcurses.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcurses.tbd; path = usr/lib/libcurses.tbd; sourceTree = SDKROOT; };
+		322400082258924E00C23440 /* libncurses.5.4.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libncurses.5.4.tbd; path = usr/lib/libncurses.5.4.tbd; sourceTree = SDKROOT; };
+		322400092258924E00C23440 /* libncurses.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libncurses.5.tbd; path = usr/lib/libncurses.5.tbd; sourceTree = SDKROOT; };
 		3224FFFB2258920800C23440 /* SpaCEInvaders */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpaCEInvaders; sourceTree = BUILT_PRODUCTS_DIR; };
 		3224FFFE2258920800C23440 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,17 +38,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3224000A2258924E00C23440 /* libncurses.5.4.tbd in Frameworks */,
+				3224000B2258924E00C23440 /* libncurses.5.tbd in Frameworks */,
+				322400072258923D00C23440 /* libcurses.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		322400052258923D00C23440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				322400082258924E00C23440 /* libncurses.5.4.tbd */,
+				322400092258924E00C23440 /* libncurses.5.tbd */,
+				322400062258923D00C23440 /* libcurses.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3224FFF22258920800C23440 = {
 			isa = PBXGroup;
 			children = (
 				3224FFFD2258920800C23440 /* SpaCEInvaders */,
 				3224FFFC2258920800C23440 /* Products */,
+				322400052258923D00C23440 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
