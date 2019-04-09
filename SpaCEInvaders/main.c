@@ -91,16 +91,22 @@ void configuracionJuego(int configuracionIncial) {
         numeroDeEscudos = anchoPantalla/20; //Acá se define el número de escudos, 80/20 = 4 escudos
     }
     else {
-        columnasDeInvasores = 11;
+        columnasDeInvasores = 14;
         numeroDeEscudos = 4;
     }
 
     //Se define el número de invasores, espacio entre invasores y ancho de los escudos
     numeroDeInvasores = filaDeInvasores * columnasDeInvasores;
     espacioEntreInvasores = (anchoPantalla-(columnasDeInvasores*ANCHOINVASOR*2))/2;
+<<<<<<< HEAD
     anchoSecciondeBloqueo =  anchoPantalla/((numeroDeEscudos*2-1)+1);  //espacio entre los bloques
 
 
+=======
+    anchoSecciondeBloqueo =  9;//anchoPantalla/((numeroDeEscudos*2-1)+1);  //espacio entre los bloques
+    
+    
+>>>>>>> fac1756b19aa09a87943043150654d2bd8d27d44
     //Inicializando los Invasores
     x = 0;
     for (fila = 0; fila < filaDeInvasores; fila++) {
@@ -350,7 +356,7 @@ void displayObjects() {
 
     //Imprime el puntaje y las vidas
     mvprintw(altoPantalla-1, 0, "Puntaje:%d", puntaje);
-    mvprintw(altoPantalla-1, anchoPantalla-7, "Lives:%d", vidasJugador);
+    mvprintw(altoPantalla-1, anchoPantalla-7, "Vidas:%d"," ", vidasJugador);
 }
 
 
