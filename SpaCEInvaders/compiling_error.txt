@@ -1,0 +1,68 @@
+/tmp/ccr6HIlm.o: En la función `displayObjects':
+main.c:(.text+0xb7c): referencia a `stdscr' sin definir
+main.c:(.text+0xb84): referencia a `wclear' sin definir
+main.c:(.text+0xbb1): referencia a `mvprintw' sin definir
+main.c:(.text+0xbda): referencia a `stdscr' sin definir
+main.c:(.text+0xbe2): referencia a `wrefresh' sin definir
+main.c:(.text+0xcf3): referencia a `mvprintw' sin definir
+main.c:(.text+0xd73): referencia a `mvprintw' sin definir
+main.c:(.text+0xe01): referencia a `mvprintw' sin definir
+main.c:(.text+0xeee): referencia a `mvprintw' sin definir
+main.c:(.text+0xf32): referencia a `mvprintw' sin definir
+/tmp/ccr6HIlm.o:main.c:(.text+0xf65): más referencias a `mvprintw' sin definir a continuación
+/tmp/ccr6HIlm.o: En la función `loop':
+main.c:(.text+0x1043): referencia a `stdscr' sin definir
+main.c:(.text+0x104b): referencia a `wclear' sin definir
+main.c:(.text+0x105c): referencia a `stdscr' sin definir
+main.c:(.text+0x1064): referencia a `wrefresh' sin definir
+main.c:(.text+0x106b): referencia a `stdscr' sin definir
+main.c:(.text+0x1073): referencia a `wgetch' sin definir
+/tmp/ccr6HIlm.o: En la función `inicioDelJuego':
+main.c:(.text+0x11a8): referencia a `stdscr' sin definir
+main.c:(.text+0x11b0): referencia a `wclear' sin definir
+main.c:(.text+0x11f1): referencia a `mvprintw' sin definir
+main.c:(.text+0x1232): referencia a `mvprintw' sin definir
+main.c:(.text+0x1273): referencia a `mvprintw' sin definir
+main.c:(.text+0x12b4): referencia a `mvprintw' sin definir
+main.c:(.text+0x12f5): referencia a `mvprintw' sin definir
+/tmp/ccr6HIlm.o:main.c:(.text+0x1336): más referencias a `mvprintw' sin definir a continuación
+/tmp/ccr6HIlm.o: En la función `inicioDelJuego':
+main.c:(.text+0x174d): referencia a `stdscr' sin definir
+main.c:(.text+0x1755): referencia a `wrefresh' sin definir
+main.c:(.text+0x175c): referencia a `stdscr' sin definir
+main.c:(.text+0x1769): referencia a `nodelay' sin definir
+main.c:(.text+0x1770): referencia a `stdscr' sin definir
+main.c:(.text+0x1778): referencia a `wgetch' sin definir
+/tmp/ccr6HIlm.o: En la función `finDelJuego':
+main.c:(.text+0x1786): referencia a `stdscr' sin definir
+main.c:(.text+0x178e): referencia a `wclear' sin definir
+main.c:(.text+0x17cf): referencia a `mvprintw' sin definir
+main.c:(.text+0x1810): referencia a `mvprintw' sin definir
+main.c:(.text+0x1851): referencia a `mvprintw' sin definir
+main.c:(.text+0x188f): referencia a `mvprintw' sin definir
+main.c:(.text+0x18d0): referencia a `mvprintw' sin definir
+/tmp/ccr6HIlm.o:main.c:(.text+0x191b): más referencias a `mvprintw' sin definir a continuación
+/tmp/ccr6HIlm.o: En la función `finDelJuego':
+main.c:(.text+0x196d): referencia a `stdscr' sin definir
+main.c:(.text+0x1975): referencia a `wrefresh' sin definir
+main.c:(.text+0x197c): referencia a `stdscr' sin definir
+main.c:(.text+0x1989): referencia a `nodelay' sin definir
+main.c:(.text+0x1990): referencia a `stdscr' sin definir
+main.c:(.text+0x1998): referencia a `wgetch' sin definir
+/tmp/ccr6HIlm.o: En la función `main':
+main.c:(.text+0x19a7): referencia a `initscr' sin definir
+main.c:(.text+0x19ac): referencia a `raw' sin definir
+main.c:(.text+0x19b6): referencia a `curs_set' sin definir
+main.c:(.text+0x19bd): referencia a `stdscr' sin definir
+main.c:(.text+0x19ca): referencia a `keypad' sin definir
+main.c:(.text+0x19e2): referencia a `stdscr' sin definir
+main.c:(.text+0x19ee): referencia a `stdscr' sin definir
+main.c:(.text+0x1a0a): referencia a `stdscr' sin definir
+main.c:(.text+0x1a16): referencia a `stdscr' sin definir
+main.c:(.text+0x1a3c): referencia a `stdscr' sin definir
+main.c:(.text+0x1a49): referencia a `nodelay' sin definir
+main.c:(.text+0x1a8a): referencia a `mvprintw' sin definir
+main.c:(.text+0x1a91): referencia a `stdscr' sin definir
+main.c:(.text+0x1a99): referencia a `wrefresh' sin definir
+main.c:(.text+0x1aa4): referencia a `endwin' sin definir
+collect2: error: ld returned 1 exit status
