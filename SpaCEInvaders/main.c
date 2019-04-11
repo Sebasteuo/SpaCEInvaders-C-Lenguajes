@@ -26,6 +26,7 @@ short int animationFlag = FALSE;
 #define ANCHOJUGADOR 6  //Dimensiones de la bala del jugador
 #define ALTOJUGADOR 2
 #define VELOCIDADJUGADOR 2  //Velocidad del movimiento del jugador
+
 short int posicionXdeJugador; //Posición del jugador
 short int flagDisparoJugador;
 //**********************************************************************************
@@ -51,7 +52,7 @@ short int bombaDisparada = FALSE; //Se define inicialmente que el tiro no sea di
 //                              Invasores
 #define ANCHOINVASOR 6
 #define ALTOINVASOR 3
-#define INVADERINCREASESPEEDRATE 25000
+#define INVADERINCREASESPEEDRATE 25000 //VELOCIDAD DE MOVIMIENTO DE INVASORES
 #define INVADERDESCENDRATE 2
 short int invasores[55][3];
 const char *invasoresCalamar[] = {" o  o", "d0000b", " {  }", " [  ]"}; //Invasor tipo 1
@@ -88,25 +89,22 @@ void configuracionJuego(int configuracionIncial) {
     //Configura las columnas de invasores y el numero de escudos dependiendo de las dimensiones de las pantallas
     if (anchoPantalla < 160) {
         columnasDeInvasores =  anchoPantalla/14;
-        numeroDeEscudos = anchoPantalla/20; //Acá se define el número de escudos, 80/20 = 4 escudos
+        numeroDeEscudos = anchoPantalla/20; //Acá se define el número de escudos, 80/20 = 4 escudos CORREGIR
     }
     else {
-        columnasDeInvasores = 14;
+        columnasDeInvasores = 11;
         numeroDeEscudos = 4;
     }
 
     //Se define el número de invasores, espacio entre invasores y ancho de los escudos
     numeroDeInvasores = filaDeInvasores * columnasDeInvasores;
     espacioEntreInvasores = (anchoPantalla-(columnasDeInvasores*ANCHOINVASOR*2))/2;
-<<<<<<< HEAD
-    anchoSecciondeBloqueo =  anchoPantalla/((numeroDeEscudos*2-1)+1);  //espacio entre los bloques
+    //anchoSecciondeBloqueo =  anchoPantalla/((numeroDeEscudos*2-1)+2);  //espacio entre los bloques
 
 
-=======
-    anchoSecciondeBloqueo =  9;//anchoPantalla/((numeroDeEscudos*2-1)+1);  //espacio entre los bloques
+    anchoSecciondeBloqueo =  9;//anchoPantalla/((numeroDeEscudos*2-1)+1);  //espacio entre los bloques CORREGIR
     
     
->>>>>>> fac1756b19aa09a87943043150654d2bd8d27d44
     //Inicializando los Invasores
     x = 0;
     for (fila = 0; fila < filaDeInvasores; fila++) {
@@ -356,7 +354,7 @@ void displayObjects() {
 
     //Imprime el puntaje y las vidas
     mvprintw(altoPantalla-1, 0, "Puntaje:%d", puntaje);
-    mvprintw(altoPantalla-1, anchoPantalla-7, "Vidas:%d"," ", vidasJugador);
+    mvprintw(altoPantalla-1, anchoPantalla-7, "Vidas:%d", vidasJugador);
 }
 
 
@@ -470,6 +468,8 @@ int finDelJuego() {
     mvprintw(altoPantalla/2+4, anchoPantalla/2-5, "Su Puntaje: %d", puntaje);
     mvprintw(altoPantalla/2+6, anchoPantalla/2-20, "Presione R para reiniciar, o Q para salir", puntaje);
     refresh();
+    usleep(1000000); //Pause, so player does not accidentally hit key and quit program
+
     nodelay(stdscr, FALSE);
     return getch();
 }
